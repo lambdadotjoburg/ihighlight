@@ -1,0 +1,80 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+
+/* Add padding/margin to right for all promptArea widgets */
+
+.lm-Widget.jp-InputPrompt.jp-InputArea-prompt {
+    /* margin-right: 5px; */
+    overflow: visible;
+    /* background-color: blueviolet; */
+    width: 50px;
+}
+
+/* iBeamer Logo Styling */
+
+.jp-ilambda-Anchor
+{
+    display: flex;
+    justify-content: flex;
+    text-align: center;
+    margin-right: 7px;
+    margin-top: 5px;
+}
+
+.jp-ilambda-Anchor img
+{
+    height: 20px;
+    width: 20px;
+}
+
+/* executionScheduled (Pending/Running/Awaiting Output) Hourglass Styling */
+
+.prompt-node-scheduled {
+    color: rgb(255, 136, 0);
+}
+
+.prompt-node-scheduled::before {
+    /* Red Solid Exclamation Mark UTF-8 Hexadecimal Encoding */
+    content: "\2757";
+    /* Red Solid Question Mark UTF-8 Hexadecimal Encoding */
+    /* content: "\2753"; */
+}
+
+.editor-scheduled {
+    background-color: rgba(253, 249, 33, 0.150);
+}
+
+/* executed (Success) Checkbox Styling */
+
+.prompt-node-success {
+    color: rgb(19, 156, 15);
+}
+
+.prompt-node-success::before {
+    /* Green/Bordered Checkmark UTF-8 Hexadecimal Encoding */
+    content: "\2705";
+    /* Plain Checkmark Checkmark UTF-8 Hexadecimal Encoding */
+    /* content: "\2713"; */ 
+}
+
+.editor-success {
+    background-color: rgba(43, 255, 1, 0.15);
+}
+
+/* executed (Error) Checkbox Styling */
+
+.prompt-node-error {
+    color: rgb(170, 11, 11);
+}
+
+.prompt-node-error::before {
+    /* Red Solid UTF-8 Cross Hexadecimal Encoding */
+    content: "\274C";
+}
+
+.editor-error {
+    background-color: rgba(255, 13, 13, 0.15);
+}
