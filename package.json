@@ -1,6 +1,6 @@
 {
   "name": "ihighlight",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A jupyter lab/notebook front-end extension for highlighting code cells based on execution status",
   "keywords": [
     "jupyter",
